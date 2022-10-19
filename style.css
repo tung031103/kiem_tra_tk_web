@@ -1,0 +1,208 @@
+/* reset css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+  
+.wrapper{
+      width: 100%;
+      background-color: #7F7E7E;
+      margin: 0 auto;
+}
+  /*begin header*/
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+  }
+  .header h1{
+    margin-right: 20px;
+  }
+  nav{
+    background-image:linear-gradient(to bottom ,#908E8E, #D4D4D3) ;
+    height: 50px;
+  }
+  nav ul{
+    margin:0;
+    padding:0;
+    list-style: none; 
+  }
+  nav a{
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 20px;
+    display: block;
+    text-transform: uppercase;
+
+  }
+  nav li{
+    display: inline-block;
+    line-height: 50px;
+    padding:0 10px;
+    border-left : 1px solid gray;
+  }
+
+ 
+  nav li:hover{
+    background-color: #F1D228;
+  }
+  /*end header*/
+  .main{
+      width: 100%;
+      background-color: #565454;
+      overflow: auto;
+  }
+  .hotnews{
+      width: 100%;
+      
+  }
+  .imgnews{
+    margin-top: 10px;
+      float: left;
+      padding: 0 10px;
+      box-sizing: border-box;
+  }
+  .imgnews img{
+      width: 100%;
+  }
+  .textnews{
+      float: left;
+      padding: 0 10px;
+      box-sizing: border-box;
+  }
+  .title{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+    margin-top: 10px;
+    line-height: 30px;
+    background-image: linear-gradient(to bottom, #FCD917, #FBEA9D)
+  }
+  
+  .content{
+    padding: 10px;
+      color: white;
+      background-image: linear-gradient(to right , #bcbaba, #383838)
+  }
+  .content > h4{
+    margin: 0;
+    padding-top: 20px;
+  }
+  
+.advertisement{
+    padding-top: 10px ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.advertisement .advertisement-img > img{
+    margin: 0 10px;
+    width: 80px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.advertisement > p{
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(255, 166, 0);
+}
+
+  .news{
+      clear: both;
+  }
+  
+  .item{
+      float: left;
+      box-sizing: border-box;
+      padding: 5px 5px;
+  }
+  .item img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  .frmcomment{
+      margin-top: 10px;
+      color: white;
+  }
+
+  .content-section{
+    width: 100%;
+    height: 330px;
+    color: white;
+    background-image: linear-gradient(to bottom, rgb(255,255,255), rgb(255,249,231), rgb(255,239,195));
+  }
+
+  .forcontent{
+    padding: 0 30px;
+    background-color: #eee;
+    color: #000;
+    text-align: justify;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+
+.btn-read-more{
+    display: inline-block;
+    float: right;
+    margin: 40px 1rem 1rem 0;
+    padding: 0.2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    background-image: linear-gradient(to bottom, #FCD917, #FBEA9D);
+    color: #000;
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 40%;
+}
